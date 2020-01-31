@@ -7,86 +7,111 @@
   <body>
 
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html"><img src="" alt=""></a></li>
-                <li><a href="info.html">Информация</a></li>
-                <li><a href="news.html">Новости</a></li>
-                <li><a href="price.html">Прайс-лист</a></li>
-                <li><a href="catalog.html">Магазин</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
+        <nav class="main-nav">
+            <a class="main-nav__logo" href="index.html">
+                <img src="img/logo.svg" width="111" height="24" alt="Логотип">
+            </a>
+            <ul class="main-nav__list">
+                <li class="main-nav__item"><a href="info.html">Информация</a></li>
+                <li class="main-nav__item"><a href="news.html">Новости</a></li>
+                <li class="main-nav__item"><a href="price.html">Прайс-лист</a></li>
+                <li class="main-nav__item main-nav__item-active"><a href="catalog.html">Магазин</a></li>
+                <li class="main-nav__item"><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <ul class="main-nav__list-2">
+                <li class="main-nav__login">
+                    <a href="login.html">Войти</a>
+                </li>
             </ul>
         </nav>
-        <ul>
-            <li>
-                <button type="button">Войти</button>
-            </li>
-        </ul>
     </header>
 
     <main>
-        <h1>Набор для путешествий «Baxter of California»</h1>
-        <ul>
-            <li><a href="index.html">ГЛАВНАЯ </a></li>
-            <li><a href="catalog.html">МАГАЗИН</a></li>
-            <li><a href="#">СРЕДСТВА ДЛЯ УХОДА</a></li>
-            <li>Набор для путешествий «Baxter of California»</li>
+        <h1 class="main__title">Набор для путешествий «Baxter of California»</h1>
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a href="index.html">ГЛАВНАЯ </a></li>
+            <li class="breadcrumbs__item"><a href="catalog.html">МАГАЗИН</a></li>
+            <li class="breadcrumbs__item"><a href="#">СРЕДСТВА ДЛЯ УХОДА</a></li>
+            <li class="breadcrumbs__item breadcrumbs__active-item">Набор для путешествий «Baxter of California»</li>
         </ul>
-        <section>
-            <h2>Изображения товара</h2>
-
-            <img src="https://via.placeholder.com/460x498" width="460" height="498" alt="Фото всего набора">
-            <ul>
-                <li><img src="https://via.placeholder.com/140x149" width="140" height="149" alt="Фото в анфас"></li>
-                <li><img src="https://via.placeholder.com/140x149" width="140" height="149" alt="Фото в профиль"></li>
-                <li><img src="https://via.placeholder.com/140x149" width="140" height="149" alt="Фото отдельной части"></li>
+        <section class="product-images">
+            <h2 class="visually-hidden">Изображения товара</h2>
+            <img class="product-images__big-image" src="img/catalog-item-big.jpg" width="460" height="498" alt="Фото всего набора">
+            <ul class="product-images__list">
+                <li class="product-images__item"><img src="img/catalog-item-small-1.jpg" width="140" height="149" alt="Фото в анфас"></li>
+                <li class="product-images__item"><img src="img/catalog-item-small-2.jpg" width="140" height="149" alt="Фото в профиль"></li>
+                <li class="product-images__item"><img src="img/catalog-item-small-3.jpg" width="140" height="149" alt="Фото отдельной части"></li>
             </ul>
         </section>
-        <section>
-            <h2>Описание товара</h2>
-            <p>Есть в наличии</p>
-            <p>Артикул: dexter-ae</p>
-            <p>Travel Kit – необходимый аксессуар во время любого
+        <section class="about-product">
+            <h2 class="about-product__title">Описание товара</h2>
+            <p class="about-product__text">Есть в наличии</p>
+            <p class="about-product__grey-text">Артикул: dexter-ae</p>
+            <p class="about-product__text">Travel Kit – необходимый аксессуар во время любого
                     путешествия. В аккуратной кожаной сумке находится все, что 
                     нужно для бритья и ухода за кожей во время рабочей поездки 
                     или отдыха: средство для умывания, увлажняющий крем, крем 
                     для бритья, крем после бритья, шампунь. Набор также может 
                     стать отличным подарком.</p>
-            <p>
+            <p class="about-product__price">
                 2 900 ₽
-                <a href="#">Купить</a>
+                <a class="about-product__buy" href="#">Купить</a>
             </p>
-            <h3>В набор входят:</h3>
-            <ul>
-                <li>Средство для умывания (50 мл)</li>
-                <li>Увлажняющий крем (50 мл)</li>
-                <li>Крем для бритья (50 мл)</li>
-                <li>Крем после бритья, шампунь (50 мл)</li>
-                <li>Удобная кожаная косметичка</li>
+            <h3 class="about-product__subtitle">В набор входят:</h3>
+            <ul class="about-product__list">
+                <li class="about-product__item">Средство для умывания (50 мл)</li>
+                <li class="about-product__item">Увлажняющий крем (50 мл)</li>
+                <li class="about-product__item">Крем для бритья (50 мл)</li>
+                <li class="about-product__item">Крем после бритья, шампунь (50 мл)</li>
+                <li class="about-product__item">Удобная кожаная косметичка</li>
             </ul>
         </section>
     </main>
 
-    <footer>
-        <p>
-            БАРБЕРШОП «БОРОДИНСКИЙ»<br>
-            АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
-            <a href="map.html">КАК НАС НАЙТИ?</a><br>
-            ТЕЛЕФОН: +7 (495) 666-02-66
+    <footer class="main-footer">
+        <p class="main-footer__text">
+            Барбершоп «Бородинский»<br>
+            Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+            <a class="main-footer__text__link" href="map.html">Как нас найти?</a><br>
+            Телефон: +7 (812) 666-02-66
         </p>
-        <div>
-            <p>ДАВАЙТЕ ДРУЖИТЬ!</p>
-            <ul>
-                <li><a href="#">Вконтакте</a></li>
-                <li><a href="#">Фейсбук</a></li>
-                <li><a href="#">Инстаграм</a></li>
+        <div class="main-footer__socials">
+            <p class="main-footer__socials__text">Давайте дружить!</p>
+            <ul class="main-footer__socials__list">
+                <li class="main-footer__socials__item"><a href="#">Вконтакте</a></li>
+                <li class="main-footer__socials__item"><a href="#">Фейсбук</a></li>
+                <li class="main-footer__socials__item"><a href="#">Инстаграм</a></li>
             </ul>
         </div>
-        <p>
-            РАЗРАБОТАНО:
-            <a href="https://htmlacademy.ru/">HTML ACADEMY</a>
+        <p class="main-footer__developed">
+            Разработано: 
+            <a class="main-footer__developed__link" href="https://htmlacademy.ru">HTML Academy</a>
         </p>
-    </footer>
+    </footer>  
+    
+    <section class="cabinet">
+        <h2 class="cabinet__title">Личный кабинет</h2>
+        <p class="cabinet__text">Введите свой логин и пароль.</p>
+        <form class="cabinet__form" action="https://echo.htmlacademy.ru" method="POST">
+            <p class="cabinet__block">
+                <label class="cabinet__caption" for="login">Логин</label>
+                <input class="cabinet__input" type="email" id="login" name="login" placeholder="email@example.com">
+            </p>
+            <p class="cabinet__block">
+                <label class="cabinet__caption" for="password">Пароль</label class="cabinet__caption">
+                <input class="cabinet__input" type="password" id="password" name="password" placeholder="••••••••">
+            </p>
+            <p class="cabinet__block">
+                <input class="cabinet__input" type="checkbox" id="remember" name="remember">
+                <label class="cabinet__caption" for="remember">Запомните меня</label class="cabinet__caption">
+                <a href="#">Я забыл пароль</a>
+            </p>
+            <p class="cabinet__block">
+                <button class="cabinet__submit" type="submit">Войти</button>
+            </p>
+        </form>
+        <button class="cabinet__close" type="button">Закрыть</button>
+    </section>
 
   </body>
 </html>
